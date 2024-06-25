@@ -24,6 +24,4 @@ npm run dev
 yarn install
 yarn run dev
 
-# bun
-bun install
 ```
