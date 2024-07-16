@@ -1,6 +1,6 @@
 # Codepred Nuxt App template
 
-Technologies: Vue, Vuetify, Typescript, Sass, Pinia
+Technologies: Vue, Nuxt, Vuetify, Typescript, Sass, Pinia, i18n
 
 ## Run the app locally
 

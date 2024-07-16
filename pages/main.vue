@@ -23,7 +23,10 @@ watch(formStore, () => {
             class="overflow-y-auto pb-8"
             style="max-height: 500px;"
         >
-            <div>Search:
+            <div>
+                <label>
+                    {{ $t('search')}}
+                </label> 
                 <v-text-field
                     v-model="formStore.searchText"
                     @input="formStore.setSearchText(formStore.searchText)"
@@ -47,7 +50,7 @@ watch(formStore, () => {
                         >
                         </v-text-field>
                         <span>
-                            Vowel counter: {{ line.vowelNumber }}
+                            {{ $t('vowelCounter')}}: {{ line.vowelNumber }}
                         </span>
                         <v-icon @click="formStore.removeField(line.id)">
                             mdi-trash-can-outline
@@ -62,7 +65,7 @@ watch(formStore, () => {
                 <v-icon :disabled="formStore.fields.length >= 10">
                     mdi-plus
                 </v-icon>
-                Add new row
+                {{ $t('addNewRow')}}
             </div>
         </div>
         <div

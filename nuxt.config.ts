@@ -12,7 +12,8 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
-    "@pinia/nuxt"
+    "@pinia/nuxt",
+    '@nuxtjs/i18n'
   ],
   vite: {
     vue: {
@@ -21,5 +22,9 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ["~/assets/scss/global.scss"]
+  css: ["~/assets/scss/global.scss"],
+  i18n: {
+    vueI18n: '../plugins/i18n.config.ts',
+    defaultLocale: 'en'
+  }
 })
